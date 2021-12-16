@@ -1,37 +1,32 @@
-## Welcome to GitHub Pages
+## Welcome to LED Matrix
 
-You can use the [editor on GitHub](https://github.com/Mnzs1701/LED_Matrix_Astra/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+This is the documentation for creation of a 10x15 LED Matrix that can be used to show animations and play Tetris, the fabrication and design of the Matrix were done 
+at Astra Robotics RVCE 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# Tutorial
 
-### Markdown
+## Building the matrix
+### Parts Required
+1. A 2 x 4 ft piece of 0.5 inch thick plywood
+2. A 5V, 4A Power Supply (Even a 2A power supply would do)
+3. An Arduino Board 
+4. 150 Individually Addressable LED's (WS2812B)
+5. Standard tools such as a drill, and a screwdriver
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Assembly
+1. Drill 10 * 15 equally spaced holes within the matrix in order to fit your LED's through each of the holes
+2.  Daisy Chain the LED's from top to down (they usually come in packs of 50 LED's)
+3. Connect the 5V Power supply to the appropriate terminals of the LED strips (Note: there will be a voltage drop when moving from one set of 50 LED's to the next so it is suggested to give a parallel power supply connection to each set).
+4. Flash the Arduino Board with the given code for either Tetris or Animations
+5. Connect the input pin of the WS2812 LED's to the D3 Pin of the Arduino and the VIN and GND pins of the Arduino to the power supply.
+6. It is recommended to use a white cloth or a diffusing sheet in order to view the matrix better
 
-```markdown
-Syntax highlighted code block
+## Creating More Animations
+Use the [Piskel App] [https://www.piskelapp.com/] to create new animations
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Mnzs1701/LED_Matrix_Astra/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+### Steps
+1. Create a new drawing and edit the size of the drawing to be 10x15 pixels (Size of the matrix)
+2. Use multiple frames in order to create your sprite sheet
+3. When you are done, save the drawing and export it into the C format
+4. Use the accompanying C++ Program to reverse the hex bits of the animation in order to display it on the matrix (the default color scheme is reversed)
+5. Replace the frames in the Arduino Code with your custom animation
