@@ -22,7 +22,7 @@ at Astra Robotics RVCE
 6. It is recommended to use a white cloth or a diffusing sheet in order to view the matrix better
 
 ## Creating More Animations
-Use the [Piskel App] [https://www.piskelapp.com/] to create new animations
+Use the [Piskel App](https://www.piskelapp.com/) to create new animations
 
 ### Steps
 1. Create a new drawing and edit the size of the drawing to be 10x15 pixels (Size of the matrix)
