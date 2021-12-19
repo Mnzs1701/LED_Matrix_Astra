@@ -21,6 +21,16 @@ at Astra Robotics RVCE
 5. Connect the input pin of the WS2812 LED's to the D3 Pin of the Arduino and the VIN and GND pins of the Arduino to the power supply.
 6. It is recommended to use a white cloth or a diffusing sheet in order to view the matrix better
 
+### Code
+The code for the programs are given for different applications [here](https://github.com/Mnzs1701/LED_Matrix_Astra.git)
+#### Tetris
+This is to make a playable game using an Android Phone and the LED Matrix over Bluetooth
+It requires an additional HC-05/HC-06 Bluetooth Module connected to the Matrix in order to function.
+Download the APK and connect the Bluetooth Module to the matrix in order to play the game
+
+#### Animations
+The animations of a [beating heart](https://github.com/Mnzs1701/LED_Matrix_Astra/blob/master/Matrix_Heart_Beat.ino) and a [snowy christmas tree](https://github.com/Mnzs1701/LED_Matrix_Astra/blob/master/Matrix_TreeAnimation.ino) are given in the code 
+
 ## Creating More Animations
 Use the [Piskel App](https://www.piskelapp.com/) to create new animations
 
