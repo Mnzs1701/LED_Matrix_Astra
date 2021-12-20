@@ -31,6 +31,9 @@ Download the APK and connect the Bluetooth Module to the matrix in order to play
 #### Animations
 The animations of a [beating heart](https://github.com/Mnzs1701/LED_Matrix_Astra/blob/master/Matrix_Heart_Beat.ino) and a [snowy christmas tree](https://github.com/Mnzs1701/LED_Matrix_Astra/blob/master/Matrix_TreeAnimation.ino) are given in the code 
 
+### Results!
+![snowy_christmas_tree](https://media.giphy.com/media/TVvYrRyzL71XlXJtQc/giphy.gif)
+
 ## Creating More Animations
 Use the [Piskel App](https://www.piskelapp.com/) to create new animations
 
